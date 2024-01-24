@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;700&family=Black+Ops+One&family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ivan Benedictus</title>
+</head>
+<body>
+    <div class="nav" id="nav">
+        <div class="navItem">
+            <a href="#">
+                <img src="./img/thearchitech_logo.png" alt="" class="logo">
+            </a>
+            <a href="#">
+                <h2 class="logoName">THEARCHITECH</h2>
+            </a>
+        </div>
+        <div class="navItem">
+            <a href="#dataWrangling">
+                <h3 class="menuItem">Data Wrangling</h3>
+            </a>
+            <a href="#dataExploration">
+                <h3 class="menuItem">Data Exploration</h3>
+            </a>
+            <a href="#dataVisualization">
+                <h3 class="menuItem">Data Visualization</h3>
+            </a>
+        </div>
+        <div class="navItem">
+            <img src="./img/profile_photo.jpg" alt="" class="photo">
+            <a href="#">
+                <h3 class="profile">Profile</h3>
+            </a>
+        </div>
+    </div>
+
+    <div class="aboutMe">
+        <img src="./img/profile_photo.jpg" alt="" class="profilePhoto">
+        <div class="description">
+            <div class="nametag">
+                <a href="https://www.linkedin.com/in/ivanbenedictuss/">
+                    <img src="./img/linkedin.png" alt="" class="linkedIn">
+                </a>
+                <h1 class="name">Ivan Benedictus Halim</h1>
+            </div>
+            <p class="description">
+                Hi there! My name is Ivan Benedictus Halim. 
+                I was born in Jakarta, 06 December 1999. 
+                Growing up, I always had a passion for learning and sharing my projects with other people, especially about business, technology, and its applications. 
+            </p>
+            <p class="description">
+                One aspect of business that interests me is how each company makes its decisions to ensure growth in the future. 
+                That's when I found the Data Analyst / Data Scientist role. 
+                My goal is to contribute to the company's growth and expansion by evaluating market trends, assessing the competitive landscape, and recommending strategies to improve the company's performance.
+                
+            </p>
+            <p class="description">
+                As a Data Analyst, We can learn a lot from a single piece of data. 
+                But sometimes, some of the data might also contain misleading informations that could be dangerous for the company. 
+                That's why, on this website, I'm going to show you the process of how I prepare, process, and present my data using Python and Tableau.
+            </p>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 100 1440 100" class="svgProfile">
+        <path fill="#151515" fill-opacity="1" d="M0,192L80,181.3C160,171,320,149,480,154.7C640,160,800,192,960,197.3C1120,203,1280,181,1360,170.7L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
+
+    <div class="dataWrangling" id="dataWrangling">
+        <h1 class="title">DATA WRANGLING</h1>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Import My Dataframe From Data Source</h2>
+            </div>
+            <p class="explanation">
+                This data frame
+                (link: <a href="https://www.kaggle.com/datasets/hendratno/covid19-indonesia">https://www.kaggle.com/dataframe/hendratno/covid19-indonesia</a>) 
+                was created to find out various factors that could be taken into consideration in decision-making related to the level of stringency in each province in Indonesia.
+                The data contains information about COVID-19 in Indonesia from 03 January 2020 - 15 September 2022.
+            </p>
+            <img src="./img/C1.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O1.jpg" alt="" class="outputImage">
+            <h2 class="stepLeft">
+                STEP</br>01
+            </h2>
+            <div class="bgStepLeft"></div>
+        </div>
+        <div class="itemRight">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Analyze My Data From The Data Frame Summary</h2>
+            </div>
+            <p class="explanation">
+                To clean this data, I first checked the summary of the data frame.
+                Usually, I checked the total number of data, the null values, and the range of the data (min and max) and looked for anything suspicious.
+                As we can see, the data has the same count values on each column, which means there shouldn't be any null values inside the data.
+                But when I investigated further, I saw the max values at some columns are way bigger than their mean value, which indicates that there might be some inaccurate data (or an outlier).
+            </p>
+            <img src="./img/C2.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O2.jpg" alt="" class="outputImage">
+            <h2 class="stepRight">
+                STEP</br>02
+            </h2>
+            <div class="bgStepRight"></div>
+        </div>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Check My Data for Null Values</h2>
+            </div>
+            <p class="explanation">
+                I then checked the data once again to make sure there weren't any null values inside the data.
+                If there are some null values, I usually delete those values or assign the mean value as the new value.
+                Right now, the output doesn't show any null values, which indicates there are none.
+            </p>
+            <img src="./img/C3.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O3.jpg" alt="" class="outputImage">
+            <h2 class="stepLeft">
+                STEP</br>03
+            </h2>
+            <div class="bgStepLeft"></div>
+        </div>
+        <div class="itemRight">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Check Your Data for Duplicates Values</h2>
+            </div>
+            <p class="explanation">
+                Next, I checked for duplicate values on the data frame and showed the result in the table below.
+                If there are any duplicate values, I usually remove those data from the dataset. 
+                Right now, the output doesn't show any duplicate values, which indicates that there are none.
+            </p>
+            <img src="./img/C4.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O3.jpg" alt="" class="outputImage">
+            <h2 class="stepRight">
+                STEP</br>04
+            </h2>
+            <div class="bgStepRight"></div>
+        </div>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Check The Maximal Values of Your Data</h2>
+            </div>
+            <p class="explanation">
+                In this step, I checked for any suspicious data from the summary I had analyzed before (max values).
+                If there were any suspicious values, they were most likely incorrectly input by the user.
+                But for this one, I think the location "Indonesia" indicates the total of all the cases that happened that day.
+                To deal with this issue, I removed all the data that contained the word "Indonesia" from the Location column.
+            </p>
+            <img src="./img/C5.jpg" alt="" class="codeImage"> 
+            </br>
+            <img src="./img/C6.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O5.jpg" alt="" class="outputImage">
+            </br>
+            <img src="./img/O6.jpg" alt="" class="outputImage">
+            <h2 class="stepLeft">
+                STEP</br>05
+            </h2>
+            <div class="bgStepLeft"></div>
+        </div>
+        <div class="itemRight">
+            <div class="header">
+                <i class="fas fa-code symbol"></i>
+                <h3 class="heading">Let's Give a Final Checkh Before Continue</h2>
+            </div>
+            <p class="explanation">
+                Before I finish my cleaning process, I usually check the data one last time and make sure the data is good.
+                I also make sure there are no null values, no duplicate data, and no suspicious data, and the data is ready for further analysis.
+            </p>
+            <img src="./img/C7.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/O7.jpg" alt="" class="outputImage">
+            <h2 class="stepRight">
+                STEP</br>06
+            </h2>
+            <div class="bgStepRight"></div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+        <path fill="#151515" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,80C480,85,600,107,720,117.3C840,128,960,128,1080,117.3C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+
+    <div class="dataExploration" id="dataExploration">
+        <h1 class="title">DATA EXPLORATION</h1>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbolWhite"></i>
+                <h3 class="heading">Let's Start by Exploring About The Range of Data</h2>
+            </div>
+            <p class="explanation">
+                One thing that usually comes to mind when exploring the data I have is to find the range of time of the data.
+                To do that, we can simply find the earliest and the latest data inputted by the user using the min() and max() functions.
+                For this data frame, we can conclude that this data was taken from 03 January 2020 until 15 September 2022.
+            </p>
+            <img src="./img/W1.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/WO1.jpg" alt="" class="outputImage">
+            <h2 class="stepLeftWhite">
+                STEP</br>01
+            </h2>
+            <div class="bgStepLeftWhite"></div>
+        </div>
+        <div class="itemRight">
+            <div class="header">
+                <i class="fas fa-code symbolWhite"></i>
+                <h3 class="heading">Find All The Location Included Inside The Data</h2>
+            </div>
+            <p class="explanation">
+                The second thing we can explore from the data frame is finding a unique value inside the column.
+                For this project, I would like to know how many Locations there are and how much data it gets from each location.
+            </p>
+            <img src="./img/W2.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/WO2.jpg" alt="" class="outputImage">
+            <h2 class="stepRightWhite">
+                STEP</br>02
+            </h2>
+            <div class="bgStepRightWhite"></div>
+        </div>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbolWhite"></i>
+                <h3 class="heading">Check The Top 5 Higehest Cases</h2>
+            </div>
+            <p class="explanation">
+                We could also explore the top 5 highest cases and the detailed data on each case.
+                And according to the data, the highest case was Located in Jawa Barat on 17 February 2022, with a total of 16251 New Cases reported.
+            </p>
+            <img src="./img/W3.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/WO3.jpg" alt="" class="outputImage">
+            <h2 class="stepLeftWhite">
+                STEP</br>03
+            </h2>
+            <div class="bgStepLeftWhite"></div>
+        </div>
+        <div class="itemRight">
+            <div class="header">
+                <i class="fas fa-code symbolWhite"></i>
+                <h3 class="heading">Group Data By Emergency Level Based On New Cases</h2>
+            </div>
+            <p class="explanation">
+                Grouping data can help you deal with continuous values.
+                For instance, I make an Emergency Level column to indicate the emergency level according to daily New Cases.
+                If the daily number of New Cases is under 3000, it is considered a Green Zone. 
+                If the range is between 3000 - 6000, it is considered a Yellow Zone.
+                If the range is between 6000 - 12000, it is considered an Orange Zone. 
+                And if it's higher than 12000, it is considered a Red Zone.
+                As a side note, we can also edit the range or perform more complicated calculations based on our needs.
+            </p>
+            <img src="./img/W4.jpg" alt="" class="codeImage">
+            <p class="output">Output:</p>
+            <img src="./img/WO4.jpg" alt="" class="outputImage">
+            <h2 class="stepRightWhite">
+                STEP</br>04
+            </h2>
+            <div class="bgStepRightWhite"></div>
+        </div>
+        <div class="itemLeft">
+            <div class="header">
+                <i class="fas fa-code symbolWhite"></i>
+                <h3 class="heading">Getting a Better Understanding Using Pivot Table</h2>
+            </div>
+            <p class="explanation">
+                To get a better understanding of our data, we can use a Pivot Table to display the data.
+                In this data frame, I used a pivot table to explore more about the Total Cases, Total Deaths, and Total Recovery.
+                We can then conclude that the highest cases of COVID-19 occured in Q3 of 2022.
+            </p>
+            <img src="./img/W5.jpg" alt="" class="codeImage"> 
+            <p class="output">Output:</p>
+            <img src="./img/WO5.jpg" alt="" class="outputImage smallTable">
+            
+            <h2 class="stepLeftWhite">
+                STEP</br>05
+            </h2>
+            <div class="bgStepLeftWhite"></div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+        <path fill="#151515" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,138.7C384,128,480,64,576,42.7C672,21,768,43,864,53.3C960,64,1056,64,1152,53.3C1248,43,1344,21,1392,10.7L1440,0L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+
+    <div class="dataVisualization" id="dataVisualization">
+        <h1 class="title">DATA VISUALIZATION</h1>
+        <img src="./img/dashboard.png" alt="" class="dashboard">
+        <div class="dashDescription">
+            <h3 class="heading">COVID-19 Dashboard Overview</h3>
+            <p class="dashExplanation">
+                As a Data Analyst, the ability to communicatee our results clearly and accurately to other people, especially to our company's shareholders, has become an essential role for the job. 
+                Even though it sounds easy, the intricacy of choosing the correct graph and displaying the information is key to avoid any misinformation. 
+                What I like to do, is to keep the design as simple as possible and avoid adding unnecessary information to keep the audience focused only on the most important part. 
+                The main idea of this project is to mimic the dashboard created by the WHO website on COVID-19 
+                (link: <a href="https://data.who.int/dashboards/covid19/cases?n=c">https://data.who.int/dashboards/covid19/cases?n=c</a>).
+            </p>
+        </div>
+        <div class="dashDescription">
+            <h3 class="heading">COVID-19 Geographical Chart</h3>
+            <p class="dashExplanation">
+                The geographical chart represents the total number of New Cases recorded around Indonesia. 
+                Each area has its unique color that represents its emergency level based on the daily New Cases on the area. 
+                The green zone represents a safe zone where the daily cases are lower, while the red zone represents the danger zone where the daily cases are high. 
+                If you hover your mouse over a specific area on the map, the detailed information will pop out and show the exact value of the data.
+            </p>
+        </div>
+        <div class="dashDescription">
+            <h3 class="heading">COVID-19 Time-Series Chart</h3>
+            <p class="dashExplanation">
+                The time-series chart records the development of the COVID-19 virus throughout the time. 
+                On the far left, the graph represents the total cases that occurred on 03 January 2020. 
+                On the far right, the graph represents the total cases that occurred on 16 September 2022. 
+                Both values on the upper left and lower left show the specific values for the Total New Cases and Total New Deaths, respectively. 
+                The time series chart here could also be used as a filter to find out the transmission of COVID-19 around Indonesia.
+            </p>
+        </div>
+        <div class="dashDescription">
+            <h3 class="heading">COVID-19 Horizontal Bar Chart</h3>
+            <p class="dashExplanation">
+                The last chart, the horizontal bar chart, represents the top 3 areas that have the highest cases of COVID-19. 
+                This chart can help the government to understand which area is in critical condition and needs immediate help. 
+                It helps us to learn about our priorities and take action to react to those circumstances.
+        </div>
+    </div>
+
+    <footer class="footer" id="footer">
+        <div class="footerItem">
+            <i class="fas fa-envelope footerLogo"></i>
+            <p class="footerText">ivan.benedictuss@gmail.com</p>
+        </div>
+        <div class="footerItem">
+            <i class="fas fa-phone footerLogo"></i>
+            <p class="footerText">(+62) 851 5900 7279</p>
+        </div>
+        <div class="footerItem">
+            <i class="fab fa-github footerLogo"></i>
+            <a href="https://github.com/IvanBenedictus">
+                <p class="footerText">https://github.com/IvanBenedictus</p>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
