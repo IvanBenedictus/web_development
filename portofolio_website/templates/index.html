@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;700&family=Black+Ops+One&family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100;700&family=Black+Ops+One&family=Saira+Condensed:wght@200&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
     <title>Ivan Benedictus</title>
 </head>
 <body>
     <div class="nav" id="nav">
         <div class="navItem">
             <a href="#">
-                <img src="./img/thearchitech_logo.png" alt="" class="logo">
+                <img src="{{ url_for('static', filename='img/thearchitech_logo.png') }}" alt="" class="logo">
             </a>
             <a href="#">
                 <h2 class="logoName">THEARCHITECH</h2>
@@ -31,7 +31,7 @@
             </a>
         </div>
         <div class="navItem">
-            <img src="./img/profile_photo.jpg" alt="" class="photo">
+            <img src="{{ url_for('static', filename='img/profile_photo.jpg') }}" alt="" class="photo">
             <a href="#">
                 <h3 class="profile">Profile</h3>
             </a>
@@ -39,11 +39,11 @@
     </div>
 
     <div class="aboutMe">
-        <img src="./img/profile_photo.jpg" alt="" class="profilePhoto">
+        <img src="{{ url_for('static', filename='img/profile_photo.jpg') }}" alt="" class="profilePhoto">
         <div class="description">
             <div class="nametag">
                 <a href="https://www.linkedin.com/in/ivanbenedictuss/">
-                    <img src="./img/linkedin.png" alt="" class="linkedIn">
+                    <img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="" class="linkedIn">
                 </a>
                 <h1 class="name">Ivan Benedictus Halim</h1>
             </div>
@@ -83,9 +83,9 @@
                 was created to find out various factors that could be taken into consideration in decision-making related to the level of stringency in each province in Indonesia.
                 The data contains information about COVID-19 in Indonesia from 03 January 2020 - 15 September 2022.
             </p>
-            <img src="./img/C1.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C1.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O1.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O1.jpg') }}" alt="" class="outputImage">
             <h2 class="stepLeft">
                 STEP</br>01
             </h2>
@@ -102,9 +102,9 @@
                 As we can see, the data has the same count values on each column, which means there shouldn't be any null values inside the data.
                 But when I investigated further, I saw the max values at some columns are way bigger than their mean value, which indicates that there might be some inaccurate data (or an outlier).
             </p>
-            <img src="./img/C2.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C2.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O2.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O2.jpg') }}" alt="" class="outputImage">
             <h2 class="stepRight">
                 STEP</br>02
             </h2>
@@ -120,9 +120,9 @@
                 If there are some null values, I usually delete those values or assign the mean value as the new value.
                 Right now, the output doesn't show any null values, which indicates there are none.
             </p>
-            <img src="./img/C3.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C3.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O3.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O3.jpg') }}" alt="" class="outputImage">
             <h2 class="stepLeft">
                 STEP</br>03
             </h2>
@@ -138,9 +138,9 @@
                 If there are any duplicate values, I usually remove those data from the dataset. 
                 Right now, the output doesn't show any duplicate values, which indicates that there are none.
             </p>
-            <img src="./img/C4.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C4.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O3.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O3.jpg') }}" alt="" class="outputImage">
             <h2 class="stepRight">
                 STEP</br>04
             </h2>
@@ -157,13 +157,13 @@
                 But for this one, I think the location "Indonesia" indicates the total of all the cases that happened that day.
                 To deal with this issue, I removed all the data that contained the word "Indonesia" from the Location column.
             </p>
-            <img src="./img/C5.jpg" alt="" class="codeImage"> 
+            <img src="{{ url_for('static', filename='img/C5.jpg') }}" alt="" class="codeImage"> 
             </br>
-            <img src="./img/C6.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C6.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O5.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O5.jpg') }}" alt="" class="outputImage">
             </br>
-            <img src="./img/O6.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O6.jpg') }}" alt="" class="outputImage">
             <h2 class="stepLeft">
                 STEP</br>05
             </h2>
@@ -178,9 +178,9 @@
                 Before I finish my cleaning process, I usually check the data one last time and make sure the data is good.
                 I also make sure there are no null values, no duplicate data, and no suspicious data, and the data is ready for further analysis.
             </p>
-            <img src="./img/C7.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/C7.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/O7.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/O7.jpg') }}" alt="" class="outputImage">
             <h2 class="stepRight">
                 STEP</br>06
             </h2>
@@ -204,9 +204,9 @@
                 To do that, we can simply find the earliest and the latest data inputted by the user using the min() and max() functions.
                 For this data frame, we can conclude that this data was taken from 03 January 2020 until 15 September 2022.
             </p>
-            <img src="./img/W1.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/W1.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/WO1.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/WO1.jpg') }}" alt="" class="outputImage">
             <h2 class="stepLeftWhite">
                 STEP</br>01
             </h2>
@@ -221,9 +221,9 @@
                 The second thing we can explore from the data frame is finding a unique value inside the column.
                 For this project, I would like to know how many Locations there are and how much data it gets from each location.
             </p>
-            <img src="./img/W2.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/W2.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/WO2.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/WO2.jpg') }}" alt="" class="outputImage">
             <h2 class="stepRightWhite">
                 STEP</br>02
             </h2>
@@ -238,9 +238,9 @@
                 We could also explore the top 5 highest cases and the detailed data on each case.
                 And according to the data, the highest case was Located in Jawa Barat on 17 February 2022, with a total of 16251 New Cases reported.
             </p>
-            <img src="./img/W3.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/W3.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/WO3.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/WO3.jpg') }}" alt="" class="outputImage">
             <h2 class="stepLeftWhite">
                 STEP</br>03
             </h2>
@@ -260,9 +260,9 @@
                 And if it's higher than 12000, it is considered a Red Zone.
                 As a side note, we can also edit the range or perform more complicated calculations based on our needs.
             </p>
-            <img src="./img/W4.jpg" alt="" class="codeImage">
+            <img src="{{ url_for('static', filename='img/W4.jpg') }}" alt="" class="codeImage">
             <p class="output">Output:</p>
-            <img src="./img/WO4.jpg" alt="" class="outputImage">
+            <img src="{{ url_for('static', filename='img/WO4.jpg') }}" alt="" class="outputImage">
             <h2 class="stepRightWhite">
                 STEP</br>04
             </h2>
@@ -278,9 +278,9 @@
                 In this data frame, I used a pivot table to explore more about the Total Cases, Total Deaths, and Total Recovery.
                 We can then conclude that the highest cases of COVID-19 occured in Q3 of 2022.
             </p>
-            <img src="./img/W5.jpg" alt="" class="codeImage"> 
+            <img src="{{ url_for('static', filename='img/W5.jpg') }}" alt="" class="codeImage"> 
             <p class="output">Output:</p>
-            <img src="./img/WO5.jpg" alt="" class="outputImage smallTable">
+            <img src="{{ url_for('static', filename='img/WO5.jpg') }}" alt="" class="outputImage smallTable">
             
             <h2 class="stepLeftWhite">
                 STEP</br>05
@@ -295,7 +295,7 @@
 
     <div class="dataVisualization" id="dataVisualization">
         <h1 class="title">DATA VISUALIZATION</h1>
-        <img src="./img/dashboard.png" alt="" class="dashboard">
+        <img src="{{ url_for('static', filename='img/dashboard.png') }}" alt="" class="dashboard">
         <div class="dashDescription">
             <h3 class="heading">COVID-19 Dashboard Overview</h3>
             <p class="dashExplanation">
@@ -334,6 +334,30 @@
         </div>
     </div>
 
+    <div class="chatbox">
+        <div class="chatboxSupport">
+            <div class="chatboxHeader">
+                <div class="chatboxImage">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="contentHeader">
+                    <h4 class="chatboxHeading">Chat Support</h4>
+                    <p class="chatboxDescription">Hi! How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatboxMessages">
+                <div></div>
+            </div>
+            <div class="chatboxFooter">
+                <input class="chatboxInput" type="text" placeholder="Write a message...">
+                <button class="chatboxSend">Send</button>
+            </div>
+        </div>
+        <div class="chatboxButton">
+            <img class="chatboxIcon" src="{{ url_for('static', filename='img/chatbox_logo.png') }}">
+        </div>
+    </div>
+
     <footer class="footer" id="footer">
         <div class="footerItem">
             <i class="fas fa-envelope footerLogo"></i>
@@ -351,6 +375,6 @@
         </div>
     </footer>
 
-    <script src="./app.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>

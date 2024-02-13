@@ -1,0 +1,98 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hey",
+                "How are you",
+                "Is anyone there?",
+                "Hello",
+                "Good day"
+            ],
+            "responses": [
+                "Hey :)",
+                "Hello, thanks for visiting",
+                "Hi there, what can I do for you?",
+                "Hi there, how can I help?"
+            ]
+        },
+        {
+            "tag": "introduction",
+            "patterns": [
+                "What is your name?", 
+                "What can I call you", 
+                "Who are you?"
+            ],
+            "responses": [
+                "My name is Bot and I'm an AI",
+                "My name is Bot! Nice to meet you :)",
+                "I'm Bot! How can I help you?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye", 
+                "See you later", 
+                "Goodbye"
+            ],
+            "responses": [
+                "See you later, thanks for visiting",
+                "Have a nice day",
+                "Bye! Come back again soon."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks", 
+                "Thank you", 
+                "That's helpful", 
+                "Thank's a lot!"],
+            "responses": [
+                "Happy to help!", 
+                "Any time!", 
+                "My pleasure"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "Can you give me Ivan's contact information?",
+                "How can I communicate with you?",
+                "Give me your contact info!",
+                "How can I reach you?"
+            ],
+            "responses": [
+                "You can call me at +62 851 5900 7279",
+                "You can email me at ivan.benedictuss@gmail.com",
+                "You can visit my linkedin <a class='socialLink' target='_blank' href='https://www.linkedin.com/in/ivanbenedictuss/'>here</a>"
+            ]
+        },
+        {
+            "tag": "projects",
+            "patterns": [
+                "What kind of projects has you made?",
+                "Where can I see your projects?",
+                "What can you do?"                
+            ],
+            "responses": [
+                "For more project, kindy visit my github page <a class='socialLink' target='_blank' href='https://github.com/IvanBenedictus'>here</a>",
+                "For more of my Tableau portofolio, please click <a class='socialLink' target='_blank' href='https://public.tableau.com/app/profile/ivan.benedictus/vizzes'>here</a>"
+            ]
+        },
+        {
+            "tag": "funny",
+            "patterns": [
+                "Tell me a joke!",
+                "Tell me something funny!",
+                "Do you know a joke?"
+            ],
+            "responses": [
+                "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+                "What did the buffalo say when his son left for college? Bison."
+            ]
+        }
+    ]
+}
