@@ -463,7 +463,7 @@ a {
 }
 
 @media only screen and (max-width: 940px){
-    .menu-container{
+    body {
         display: none;
     }
 }

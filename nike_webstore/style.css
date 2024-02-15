@@ -453,17 +453,143 @@ footer {
     color: white;
 }
   
-.fIcons{
+.fIcons {
     display: flex;
 }
   
-.fIcon{
+.fIcon {
     width: 20px;
     height: 20px;
     margin-right: 40px;
 }
   
-.copyright{
+.copyright {
     font-weight: 300;
     font-size: 14px;
 }
+
+@media screen and (max-width:480px) {
+    .navTop {
+        padding: 15px;
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .search,
+    .limitedOffer {
+        display: none;
+    }
+  
+    .navBottom {
+        display: flex;
+        padding: 10px;
+    }
+  
+    .menuItem {
+        margin: 0px 15px 0px 15px;
+        font-weight: 400px;
+        font-size: 10px;
+    }
+  
+    .slider {
+        clip-path: none; 
+        position: relative;
+    }
+  
+    .sliderImg {
+        width: 90%;
+    }
+  
+    .sliderBg {
+        width: 100%;
+        height: 100%;
+    }
+  
+    .sliderTitle {
+        display: none;
+    }
+  
+    .sliderPrice {
+        font-size: 50px;
+        margin-left: 225px;
+        margin-top: 60px;
+    }
+  
+    .buyButton {
+        margin-top: 100px;
+        margin-right: 180px;
+        font-size: 20px;
+    }
+  
+    .features {
+        flex-direction: column;
+    }
+  
+    .product {
+        clip-path: none ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .productImg {
+        width: 80%;
+    }
+  
+    .productDetails {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 0;
+    }
+  
+    .productTitle {
+        font-size: 50px;
+        margin: 0;
+    }
+  
+    .gallery {
+        display: none;
+    }
+  
+    .newSeason {
+        flex-direction: column;
+    }
+  
+    .nsItem:nth-child(2) {
+        padding: 50px;
+    }
+  
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footerLeft {
+        padding: 20px;
+        width: 90%;
+    }
+  
+    .footerRight {
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+    .footerRightMenu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+  
+    .payment{
+        width: 90%;
+        padding: 20px;
+    }
+  }
