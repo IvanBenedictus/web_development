@@ -461,9 +461,3 @@ a {
 .footerText {
     color: #fafafa;
 }
-
-@media only screen and (max-width: 940px){
-    body {
-        display: none;
-    }
-}
