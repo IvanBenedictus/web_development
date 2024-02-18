@@ -1,3 +1,4 @@
+// Product List
 const products = [
     {
         id: 1,
@@ -86,26 +87,28 @@ const currentProductSizes = document.querySelectorAll(".size");
 
 let choosenProduct = products[0];
 
+// Changes for every menuItem selected
 menuItems.forEach((item, index) => {
     item.addEventListener("click", () => {
-        //change the current slide
+        // Change the current slide
         wrapper.style.transform = `translateX(${-100 * index}vw)`;
 
-        //change the choosen product
+        // Change the choosen product
         choosenProduct = products[index];
 
-        //change texts of currentProduct
+        // Change text, price and image of currentProduct in choosen product
         currentProductTitle.textContent = choosenProduct.title;
         currentProductPrice.textContent = "$" + choosenProduct.price;
         currentProductImg.src = choosenProduct.colors[0].img;
 
-        //assing new colors
+        // Change product image based on color for choosen product
         currentProductColors.forEach((color, index) => {
             color.style.backgroundColor = choosenProduct.colors[index].code;
         });
     });
 });
 
+// Change style of color box for choosen product
 currentProductColors.forEach((color, index) => {
     color.addEventListener("click", () => {
         currentProductColors.forEach((color) => {
@@ -116,6 +119,7 @@ currentProductColors.forEach((color, index) => {
     });
 });
 
+// Change style of size box for choosen produc
 currentProductSizes.forEach((size) => {
     size.addEventListener("click", () => {
         currentProductSizes.forEach((size) => {
@@ -131,10 +135,12 @@ const productButton = document.querySelector(".productButton");
 const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
+// Diplay payment page
 productButton.addEventListener("click", () => {
     payment.style.display = "flex";
 });
 
+// Close payment page
 close.addEventListener("click", () => {
     payment.style.display = "none";
 });
