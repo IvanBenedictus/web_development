@@ -1,17 +1,24 @@
-from utils import bag_of_words, tokenize
-
 import random
 import json
 import torch
 import pickle
+from pathlib import Path
+
+from .utils import bag_of_words, tokenize
+from .model import NeuralNet
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-with open("intents.json", "r") as json_data:
-    intents = json.load(json_data)
+# Construct an absolute path to the intent.json file
+current_dir = Path(__file__).parent
+json_path = current_dir/"intents.json"
 
-FILE = "data.pkl"
-with open(FILE, 'rb') as f:
+# Open and read the intent.json file
+with open(json_path, "r") as file:
+    intents = json.load(file)
+
+FILE = current_dir/"data.pkl"
+with open(FILE, "rb") as f:
     data = pickle.load(f)
 
 model = data["model"]
